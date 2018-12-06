@@ -21,7 +21,7 @@
                     <a href="{{ route('category.create') }}">Add Category</a>
                 </li>
                 <li>
-                    <a href="#">All Categories</a>
+                    <a href="{{ route('category.index') }}">All Categories</a>
                 </li>
             </ul>
             <!-- /.nav-second-level -->

@@ -5,12 +5,24 @@
 @section('content-body')
     <div style="box-shadow: 0px 0px 5px orangered">
         @if(Session::has('success'))
-            <div class="alert alert-success">
-                {{ Session::get('success') }}
+        <div class="row" style="padding-top:10px;">
+            <div class="col-md-offset-1 col-md-6">
+                <div class="alert alert-success">
+                    {{ Session::get('success') }}
+                </div>
             </div>
+        </div>
         @endif
-
-        <form method="post" action="{{ route('category.create') }}" enctype="multipart/form-data" class="form-horizontal">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div><br />
+        @endif
+        <form action="{{ route('category.store') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
             <input type="hidden" value="{{ csrf_token() }}" name="_token">
             <div class="row" style="padding: 50px 0px 10px 0px">
                 <div class="col-md-offset-1 col-md-5">
@@ -40,7 +52,7 @@
                 <div class="col-md-offset-1 col-md-6">
                     <div class="form-group">
                         <input type="button" id="reset" value="Reset" class="btn btn-warning">
-                        <input type="submit" name="category_image" value="Create" class="btn btn-info">
+                        <input type="submit" value="Create" class="btn btn-info">
                     </div>
                 </div>
             </div>

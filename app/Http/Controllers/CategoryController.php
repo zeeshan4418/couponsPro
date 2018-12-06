@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Http\Requests\CategoryRequest;
 use Illuminate\Http\Request;
+use Validator;
+use Illuminate\Http;
 
 class CategoryController extends Controller
 {
@@ -14,7 +17,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-
+        $data = Category::all();
+        return view('admin.home.category.showAllCategory',$data);
     }
 
     /**
@@ -33,21 +37,18 @@ class CategoryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        $data = $request->except(['_token']);
-        $data = $request->validate([
-            'category_name' => 'required'
-        ]);
 
-        if($request->hasFile('cat-img')){
-            $file = $request->file('cat-img');
+    public function store(CategoryRequest $request)
+    {
+        $data = $request->except('_token');
+        if($request->hasFile('category_image')){
+            $file = $request->file('category_image');
             $file->move('img/category',$file->getClientOriginalName());
+            $data['category_image'] = $file->getClientOriginalName();
         }
 
         Category::create($data);
-        dd($data);
-        //return redirect('/admin/category/create')->with('success','Category Successfully Created');
+        return redirect('/admin/category/create')->with('success','Category Successfully Created');
     }
 
     /**
