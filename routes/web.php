@@ -19,3 +19,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('admin/category','CategoryController');
+Route::resource('admin/store','StoreController');

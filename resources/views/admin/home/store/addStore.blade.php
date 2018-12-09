@@ -1,6 +1,6 @@
 @extends('layout.backend-app')
 @section('content-heading')
-    <h1 class="page-header">Add Category</h1>
+    <h1 class="page-header">Add Store</h1>
 @endsection
 @section('content-body')
     <div style="box-shadow: 0px 0px 5px orangered">
@@ -22,33 +22,59 @@
                 </ul>
             </div><br />
         @endif
-        <form action="{{ route('category.store') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <form action="{{ route('store.store') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
             <input type="hidden" value="{{ csrf_token() }}" name="_token">
-            <div class="row" style="padding: 50px 0px 10px 0px">
+        <div class="row" style="padding: 50px 0px 10px 0px">
                 <div class="col-md-offset-1 col-md-5">
-                    <label>Category Name / Title <span class="small">- Like electronics, clothing</span></label>
+                    <label>Store Name / Title </label>
                     <div class="form-group">
-                        <input type="text" name="category_name" class="form-control" placeholder="Enter Category Name">
+                        <input type="text" name="store_name" class="form-control" placeholder="Enter Store Name">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px">
+                <div class="col-md-offset-1 col-md-5">
+                    <label>Store Link </label>
+                    <div class="form-group">
+                        <input type="text" name="store_link" class="form-control" placeholder="Enter Store Link">
                     </div>
                 </div>
             </div>
             <div class="row" style="padding: 0px 0px 20px 0px">
-                <div class="col-md-offset-1 col-md-4">
+                <div class="col-md-offset-1 col-md-2">
                     <div class="thumbnail img-upload" style="display: none">
-                        <img class="img-responsive" width="100" src="" id="cat-img" />
+                        <img class="img-responsive" width="100" src="" id="store-img" />
                     </div>
                 </div>
             </div>
-            <div class="row" style="padding: 0px 0px 20px 0px">
+            <div class="row" style="padding: 0px 0px 10px 0px">
                 <div class="col-md-offset-1 col-md-6">
                     <label>Category Image </label>
                     <div class="form-group">
-                        <input type="file" name="category_image" style="display: none" />
-                        <input type="button" id="cat-img-btn" value="Choose Image" class="btn btn-danger file-btn">
+                        <input type="file" name="store_image" style="display: none" />
+                        <input type="button" id="store-img-btn" value="Choose Image" class="btn btn-danger file-btn">
                     </div>
                 </div>
             </div>
-            <div class="row text-center" style="padding: 50px 0px 80px 0px">
+            <div class="row" style="padding: 10px 0px 10px 0px">
+                <div class="col-md-offset-1 col-md-2">
+                    <label>Store Featured</label>
+                    <div class="material-switch pull-right">
+                        <input id="someSwitchOptionPrimary" name="store_featured" type="checkbox"/>
+                        <label for="someSwitchOptionPrimary" class="label-primary"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding: 50px 0px 30px 0px">
+                <div class="col-md-offset-1 col-md-2">
+                    <label>Store Status</label>
+                    <div class="material-switch pull-right">
+                        <input id="storeStatus" name="store_status" type="checkbox"/>
+                        <label for="storeStatus" class="label-primary"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center" style="padding: 20px 0px 80px 0px">
                 <div class="col-md-offset-1 col-md-6">
                     <div class="form-group">
                         <input type="button" id="reset" value="Reset" class="btn btn-warning">
@@ -67,7 +93,7 @@
             var reader = new FileReader();
             reader.onload = function (e) {
                 $('.img-upload').css('display','block');
-                $('#cat-img').attr('src', e.target.result);
+                $('#store-img').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }

@@ -5,7 +5,7 @@
                 <input type="text" class="form-control" placeholder="Search...">
                 <span class="input-group-btn">
                     <button class="btn btn-default" type="button">
-                                <i class="fa fa-search"></i>
+                        <i class="fa fa-search"></i>
                     </button>
                 </span>
             </div>
@@ -22,6 +22,18 @@
                 </li>
                 <li>
                     <a href="{{ route('category.index') }}">All Categories</a>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-list-alt fa-fw"></i> Stores <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="{{ route('store.create') }}"> Add Store</a>
+                </li>
+                <li>
+                    <a href="{{ route('store.index') }}"> All Stores</a>
                 </li>
             </ul>
             <!-- /.nav-second-level -->
@@ -90,7 +102,7 @@
             <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level">
                 <li>
-                    <a href="blank.html">Blank Page</a>
+                    <a href="#">Blank Page</a>
                 </li>
                 <li>
                     <a href="login.html">Login Page</a>
