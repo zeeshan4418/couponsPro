@@ -28,6 +28,10 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+
 </head>
 <style>
     .material-switch > input[type="checkbox"] {
@@ -74,5 +78,6 @@
         background: inherit;
         left: 20px;
     }
+
 </style>
 <body>

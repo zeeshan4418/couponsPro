@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreRequest;
 use App\Store;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class StoreController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +19,8 @@ class StoreController extends Controller
      */
     public function index()
     {
-        //
+        $data = Store::all();
+        return view('admin.home.store.showAllStore')->with('store',$data);
     }
 
     /**
@@ -34,9 +39,32 @@ class StoreController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreRequest $request)
     {
-        //
+        $data = $request->except('_token');
+        $allowedfileExtension=['jpg','png'];
+        if($request->hasFile('store_image')){
+            $file = $request->file('store_image');
+            $extension = $file->getClientOriginalExtension();
+            $check=in_array($extension,$allowedfileExtension);
+            if($check) {
+                $file->move('img/store', $file->getClientOriginalName());
+                $data['store_image'] = 'img/store/' . $file->getClientOriginalName();
+                if (!$request->has('store_status')){
+                    $data['store_status'] = 'off';
+                }
+                if(!$request->has('store_featured')){
+                    $data['store_featured'] = 'off';
+                }
+                Store::create($data);
+                return redirect('/admin/store/create')->with('success', 'Store Successfully Created');
+            }
+            else{
+                return redirect('/admin/store/create')->with('success','Please Select jpg/png Image');
+            }
+
+        }
+
     }
 
     /**
@@ -47,7 +75,7 @@ class StoreController extends Controller
      */
     public function show(Store $store)
     {
-        //
+
     }
 
     /**
@@ -58,7 +86,11 @@ class StoreController extends Controller
      */
     public function edit(Store $store)
     {
-        //
+        // get the nerd
+        $s = Store::find($store)->first();
+        // show the edit form and pass the nerd
+        return view('admin.home.store.addStore')
+            ->with('store', $s);
     }
 
     /**
@@ -68,9 +100,11 @@ class StoreController extends Controller
      * @param  \App\Store  $store
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Store $store)
+    public function update($id, StoreRequest $request)
     {
-        //
+
+        //dd($id);
+
     }
 
     /**
@@ -81,6 +115,7 @@ class StoreController extends Controller
      */
     public function destroy(Store $store)
     {
-        //
+        $store->delete();
+        redirect('/admin/store')->with('success','Store Deleted Successfully');
     }
 }

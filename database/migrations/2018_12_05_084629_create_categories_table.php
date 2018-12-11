@@ -18,6 +18,7 @@ class CreateCategoriesTable extends Migration
                 $table->increments('id');
                 $table->string('category_name');
                 $table->string('category_image');
+                $table->string('category_status');
                 $table->timestamps();
             });
         }

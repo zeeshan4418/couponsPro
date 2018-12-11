@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Sotre extends Migration
+class CreateStoreTable extends Migration
 {
     /**
      * Run the migrations.
@@ -36,3 +36,5 @@ class Sotre extends Migration
         Schema::dropIfExists('stores');
     }
 }
+
+

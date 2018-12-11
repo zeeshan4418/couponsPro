@@ -48,6 +48,15 @@
                     </div>
                 </div>
             </div>
+            <div class="row" style="padding: 20px 0px 30px 0px">
+                <div class="col-md-offset-1 col-md-3">
+                    <label>Category Status</label>
+                    <div class="material-switch pull-right">
+                        <input id="categoryStatus" name="category_status" type="checkbox"/>
+                        <label for="categoryStatus" class="label-primary"></label>
+                    </div>
+                </div>
+            </div>
             <div class="row text-center" style="padding: 50px 0px 80px 0px">
                 <div class="col-md-offset-1 col-md-6">
                     <div class="form-group">

@@ -46,18 +46,26 @@ class CategoryController extends Controller
 
     public function store(CategoryRequest $request)
     {
+
         $data = $request->except('_token');
         $allowedfileExtension=['jpg','png'];
-
         if($request->hasFile('category_image')){
             $file = $request->file('category_image');
             $extension = $file->getClientOriginalExtension();
             $check=in_array($extension,$allowedfileExtension);
-            if($check){
-                $file->move('img/category',$file->getClientOriginalName());
-                $data['category_image'] = 'img/category/'.$file->getClientOriginalName();
-                Category::create($data);
-                return redirect('/admin/category/create')->with('success','Category Successfully Created');
+            if($check) {
+                $file->move('img/category', $file->getClientOriginalName());
+                $data['category_image'] = 'img/category/' . $file->getClientOriginalName();
+                if ($request->has('category_status')){
+                    Category::create($data);
+                    return redirect('/admin/category/create')->with('success', 'Category Successfully Created');
+                }
+                else{
+                    $data['category_status'] = 'off';
+                    Category::create($data);
+                    return redirect('/admin/category/create')->with('success', 'Category Successfully Created');
+
+                }
             }
             else{
                 return redirect('/admin/category/create')->with('success','Please Select jpg/png Image');
@@ -75,6 +83,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
+
         // get the nerd
         //$cat = Category::find($category);
 
@@ -108,6 +117,7 @@ class CategoryController extends Controller
      */
     public function update(Category $category)
     {
+        dd($category);
         //
     }
 
@@ -119,7 +129,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        Category::destroy($category);
+        $category->delete();
         return redirect('/admin/category')->with('success','Category Deleted Successfully');
     }
 }
