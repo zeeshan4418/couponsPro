@@ -100,11 +100,14 @@ class StoreController extends Controller
      * @param  \App\Store  $store
      * @return \Illuminate\Http\Response
      */
-    public function update($id, StoreRequest $request)
+    public function update(StoreRequest $request, Store $store)
     {
-
-        //dd($id);
-
+        $exceptFields = [
+            "_token","_method"
+        ];
+        $data = $request->except($exceptFields);
+        $store->update($data);
+        return redirect('/admin/store')->with('success','Store Updated Successfully');
     }
 
     /**
@@ -116,6 +119,6 @@ class StoreController extends Controller
     public function destroy(Store $store)
     {
         $store->delete();
-        redirect('/admin/store')->with('success','Store Deleted Successfully');
+        return redirect('/admin/store')->with('success','Store Deleted Successfully');
     }
 }

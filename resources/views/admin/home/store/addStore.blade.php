@@ -22,8 +22,10 @@
                 </ul>
             </div><br />
         @endif
-        <form action="{{ isset($store) ? url('admin/store',$store->id):@route('store.store') }}" method="{{ isset($store) ? 'PUT':'POST' }}" enctype="multipart/form-data" class="form-horizontal">
+        <form action="{{ isset($store) ? url('admin/store',$store->id) : route('store.store') }}" method="POST" enctype="multipart/form-data" class="form-horizontal">
             <input type="hidden" value="{{ csrf_token() }}" name="_token">
+            {{--{{ method_field('PATCH') }}--}}
+            <input type="hidden" name="_method" value="PUT">
         <div class="row" style="padding: 50px 0px 10px 0px">
                 <div class="col-md-offset-1 col-md-5">
                     <label>Store Name / Title </label>
