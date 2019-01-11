@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Coupons;
 use App\ForumCategory;
+use App\Store;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ForumCategoryController extends Controller
+class CouponsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +18,7 @@ class ForumCategoryController extends Controller
      */
     public function index()
     {
-        $forum = ForumCategory::paginate(15);
-        return view('admin.home.forumcategory.showAllForumCategory')->with('forum',$forum);
+        //
     }
 
     /**
@@ -26,7 +28,12 @@ class ForumCategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.home.forumcategory.addForumCategory');
+        $data = [
+            'ForumCategory' => ForumCategory::all(),
+            'Stores' => Store::all(),
+            'category' => Category::all()
+            ];
+        return view('admin.home.coupons.addCoupons')->with('data',$data);
     }
 
     /**
@@ -37,21 +44,16 @@ class ForumCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->except('_token');
-        if (!$request->has('store_status')){
-            $data['store_status'] = 'off';
-        }
-        ForumCategory::create($data);
-        return redirect('/admin/forum/create')->with('success', 'Store Successfully Created');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\ForumCategory  $formCategory
+     * @param  \App\Coupons  $coupons
      * @return \Illuminate\Http\Response
      */
-    public function show(ForumCategory $formCategory)
+    public function show(Coupons $coupons)
     {
         //
     }
@@ -59,10 +61,10 @@ class ForumCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\ForumCategory  $formCategory
+     * @param  \App\Coupons  $coupons
      * @return \Illuminate\Http\Response
      */
-    public function edit(ForumCategory $formCategory)
+    public function edit(Coupons $coupons)
     {
         //
     }
@@ -71,10 +73,10 @@ class ForumCategoryController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\ForumCategory  $formCategory
+     * @param  \App\Coupons  $coupons
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ForumCategory $formCategory)
+    public function update(Request $request, Coupons $coupons)
     {
         //
     }
@@ -82,10 +84,10 @@ class ForumCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\ForumCategory  $formCategory
+     * @param  \App\Coupons  $coupons
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ForumCategory $formCategory)
+    public function destroy(Coupons $coupons)
     {
         //
     }

@@ -28,7 +28,7 @@
                 <div class="col-md-offset-1 col-md-5">
                     <label>Forum Type </label>
                     <div class="form-group">
-                        <select class="form-control selectpicker" data-live-search="true">
+                        <select name="forum_type" class="form-control selectpicker" data-live-search="true">
                             <option data-tokens="coupon">Coupon</option>
                             <option data-tokens="deal">Deal</option>
                             <option data-tokens="discussion">Discussion</option>
@@ -48,7 +48,18 @@
                 <div class="col-md-offset-1 col-md-5">
                     <label>Forum Discruption </label>
                     <div class="form-group">
-                        <textarea name="forum_discussion" class="form-control" placeholder="Enter Forum Discussion">{{ isset($forum->forum_discussion) ? $forum->forum_discussion : '' }}</textarea>
+                        <textarea name="forum_description" class="form-control" placeholder="Enter Forum Discussion">{{ isset($forum->forum_discussion) ? $forum->forum_discussion : '' }}</textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-1 col-md-5">
+                    <div class="form-group">
+                        <label>Status</label>
+                        <div class="material-switch pull-right">
+                            <input id="storeFeatured" name="forum_status" type="checkbox" {{ isset($forum->forum_status) ? 'checked' : '' }} />
+                            <label for="storeFeatured" class="label-primary"></label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -56,7 +67,7 @@
                 <div class="col-md-offset-1 col-md-6">
                     <div class="form-group">
                         <input type="button" id="reset" value="Reset" class="btn btn-warning">
-                        <input type="submit" value="{{ isset($store) ? 'Update':'Create' }}" class="btn btn-info">
+                        <input type="submit" value="{{ isset($forum) ? 'Update':'Create' }}" class="btn btn-info">
                     </div>
                 </div>
             </div>

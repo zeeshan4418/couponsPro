@@ -51,6 +51,18 @@
             <!-- /.nav-second-level -->
         </li>
         <li>
+            <a href="#"><i class="fa fa-list-alt fa-fw"></i> Coupons <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="{{ route('coupon.create') }}"> Add Coupon </a>
+                </li>
+                <li>
+                    <a href="{{ route('coupon.index') }}"> All Coupons </a>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+        <li>
             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
         </li>
         <li>

@@ -21,3 +21,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('admin/category','CategoryController');
 Route::resource('admin/store','StoreController');
 Route::resource('admin/forum','ForumCategoryController');
+Route::resource('admin/coupon','CouponsController');
