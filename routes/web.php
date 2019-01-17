@@ -22,3 +22,4 @@ Route::resource('admin/category','CategoryController');
 Route::resource('admin/store','StoreController');
 Route::resource('admin/forum','ForumCategoryController');
 Route::resource('admin/coupon','CouponsController');
+Route::resource('admin/banner','HomeBannerController');

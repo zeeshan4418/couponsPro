@@ -63,6 +63,18 @@
             <!-- /.nav-second-level -->
         </li>
         <li>
+            <a href="#"><i class="fa fa-list-alt fa-fw"></i> Home Banner <span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+                <li>
+                    <a href="{{ route('banner.create') }}"> Add Banner </a>
+                </li>
+                <li>
+                    <a href="{{ route('banner.index') }}"> All Banners </a>
+                </li>
+            </ul>
+            <!-- /.nav-second-level -->
+        </li>
+        <li>
             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
         </li>
         <li>

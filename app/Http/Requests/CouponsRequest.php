@@ -13,7 +13,7 @@ class CouponsRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,17 @@ class CouponsRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'coupon_forum_category' => 'required|string',
+            'coupon_store' => 'required|string',
+            'coupon_category' => 'required|string',
+            'coupon_name' => 'required|string',
+            'coupon_description' => 'required|string',
+            'coupon_price' => 'required|string',
+            'coupon_discount' => 'required|string',
+            'coupon_code' => 'required|string',
+            'coupon_url' => 'required|string',
+            'coupon_expiry_date' => 'required|string',
+            'coupon_image' => 'image|mimes:jpeg,png,jpg|max:30',
         ];
     }
 }

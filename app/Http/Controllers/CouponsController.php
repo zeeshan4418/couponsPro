@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Coupons;
 use App\ForumCategory;
+use App\Http\Requests\CouponsRequest;
 use App\Store;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -42,9 +43,34 @@ class CouponsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CouponsRequest $request)
     {
-        //
+        $data = $request->except(['_method','_token']);
+        if($request->hasFile('coupon_image')){
+            $file = $request->file('coupon_image');
+
+            $file->move('img/coupon', $file->getClientOriginalName());
+            $data['coupon_image'] = 'img/coupon/' . $file->getClientOriginalName();
+
+            if (!$request->has('coupon_featured')){
+                $data['coupon_featured'] = 'Off';
+            }
+            if (!$request->has('coupon_exclusive')){
+                $data['coupon_exclusive'] = 'Off';
+            }
+            if (!$request->has('coupon_verify')){
+                $data['coupon_verify'] = 'Off';
+            }
+            if (!$request->has('coupon_status')){
+                $data['coupon_status'] = 'Off';
+            }
+
+            Coupons::create($data);
+            return redirect('/admin/coupon/create')->with('success', 'Coupon Successfully Created');
+
+        }
+        
+
     }
 
     /**

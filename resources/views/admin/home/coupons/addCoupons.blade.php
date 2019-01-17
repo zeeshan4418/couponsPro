@@ -26,11 +26,8 @@
             <form action="{{ isset($coupon) ? url('admin/coupon',$coupon->id) : route('coupon.store') }}" method="POST" enctype="multipart/form-data">
             <input type="hidden" value="{{ csrf_token() }}" name="_token">
             {{--{{ method_field('PATCH') }}--}}
-            <input type="hidden" name="_method" value="PUT">
-            <?php
-                   /* echo "<pre>";
-                    print_r($data);*/
-                ?>
+            {{ isset($coupon) ? '<input type="hidden" name="_method" value="PUT">':'' }}
+
             <div class="col-md-6">
                 <div class="row" style="padding: 50px 0px 10px 0px">
                     <div class="col-md-offset-1 col-md-11">
@@ -153,7 +150,7 @@
                     <div class="col-md-11">
                         <div class="form-group">
                             <label> Coupon Description </label>
-                            <textarea name="coupon_description" class="form-control" rows="2">{{ isset($coupon->coupon_description) ? $coupon->coupon_description:"" }}</textarea>
+                            <textarea name="coupon_description" placeholder="Enter Coupon Description" class="form-control" rows="2">{{ isset($coupon->coupon_description) ? $coupon->coupon_description:"" }}</textarea>
                         </div>
                     </div>
                 </div>
@@ -178,37 +175,37 @@
                         <div class="form-group">
                             <label>Store Featured</label>
                             <div class="material-switch pull-right">
-                                <input id="storeFeatured" name="coupon_featured" type="checkbox" {{ isset($coupon->store_featured) ? 'checked' : '' }} />
-                                <label for="storeFeatured" class="label-primary"></label>
+                                <input id="couponFeatured" name="coupon_featured" type="checkbox" {{ isset($coupon->coupon_featured) ? 'checked' : '' }} />
+                                <label for="couponFeatured" class="label-primary"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Coupon Exclusive</label>
                             <div class="material-switch pull-right">
-                                <input id="storeStatus" name="coupon_exclusive" type="checkbox" {{ isset($coupon->store_status) ? 'checked' : '' }} />
-                                <label for="storeStatus" class="label-primary"></label>
+                                <input id="couponExclusive" name="coupon_exclusive" type="checkbox" {{ isset($coupon->coupon_exclusive) ? 'checked' : '' }} />
+                                <label for="couponExclusive" class="label-primary"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Store Verify</label>
                             <div class="material-switch pull-right">
-                                <input id="storeStatus" name="coupon_verify" type="checkbox" {{ isset($coupon->coupon_verify) ? 'checked' : '' }} />
-                                <label for="storeStatus" class="label-primary"></label>
+                                <input id="couponVerify" name="coupon_verify" type="checkbox" {{ isset($coupon->coupon_verify) ? 'checked' : '' }} />
+                                <label for="couponVerify" class="label-primary"></label>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>Store Status</label>
                             <div class="material-switch pull-right">
-                                <input id="storeStatus" name="coupon_status" type="checkbox" {{ isset($coupon->coupon_status) ? 'checked' : '' }} />
-                                <label for="storeStatus" class="label-primary"></label>
+                                <input id="couponStatus" name="coupon_status" type="checkbox" {{ isset($coupon->coupon_status) ? 'checked' : '' }} />
+                                <label for="couponStatus" class="label-primary"></label>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-12 text-center" style="padding: 20px 0px 50px 0px;">
-                <input type="submit" value="Save" class="btn btn-warning">
-                <input type="submit" value="Reset" class="btn btn-info">
+                <input type="button" value="Reset" class="btn btn-warning">
+                <input type="submit" value="Save" class="btn btn-info">
             </div>
         </form>
     </div>
