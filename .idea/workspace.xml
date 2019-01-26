@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f6a4fc9-0d57-4d60-8afb-d651fd640452" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/swipebox.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/ab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/contact.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/d9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/f3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/g9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/sale.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/team1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/team2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/team3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/team4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.flexisel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.nicescroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.swipebox.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.vide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/minicart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/responsiveslides.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/video/gift-packs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/video/gift-packs.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/video/gift-packs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/include/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/include/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="7f6a4fc9-0d57-4d60-8afb-d651fd640452" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,15 +63,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/include/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#5272#5279#1#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +81,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="152" column="13" lean-forward="true" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+            <state relative-caret-position="2584">
+              <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -151,7 +90,7 @@
       <file leaf-file-name="owl.carousel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/owl.carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="4148">
               <caret line="252" selection-start-line="252" selection-end-line="252" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -352,6 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -402,13 +342,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="web&#9;FILE&#9;file://C:/wamp64/www/couponsPro/routes/web.php&#10;welcom&#9;FILE&#9;file://C:/wamp64/www/couponsPro/resources/views/welcome.blade.php&#10;welcome&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/welcome.blade.php&#10;side&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/inc/sidebar-menu.blade.php&#10;addf&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/home/forumcategory/addForumCategory.blade.php&#10;add&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/home/coupons/addCoupons.blade.php&#10;addFor&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/home/forumcategory/addForumCategory.blade.php&#10;header&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/inc/header.blade.php&#10;footer&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/inc/footer.blade.php&#10;categ&#9;FILE&#9;file://F:/wamp/www/couponsPro/app/Http/Controllers/CategoryController.php&#10;category&#9;FILE&#9;file://F:/wamp/www/couponsPro/app/Http/Requests/CategoryRequest.php&#10;terminal&#9;ACTION&#9;ActivateTerminalToolWindow&#10;AppServiceProvider&#9;null&#9;null&#10;.env&#9;FILE&#9;file://C:/wamp64/www/couponsPro/.env&#10;foot&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/inc/footer.blade.php&#10;ConvertEmptyStringsToNull&#9;null&#9;null&#10;TrimStrings&#9;FILE&#9;file://F:/wamp/www/couponsPro/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&#10;RouteServiceProvider&#9;null&#9;null&#10;sid&#9;FILE&#9;file://F:/wamp/www/couponsPro/resources/views/admin/inc/sidebar-menu.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laravel-Classimax-Directory" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -466,14 +405,16 @@
       <workItem from="1547642184712" duration="1073000" />
       <workItem from="1547711506900" duration="5745000" />
       <workItem from="1547748829542" duration="2845000" />
+      <workItem from="1547924408532" duration="128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110842000" />
+    <option name="totallyTimeSpent" value="110970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -482,7 +423,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.45214522" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27912253" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -490,33 +431,33 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17238267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.036775105" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,9 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#5272#5279#1#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,14 +771,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="152" column="13" lean-forward="true" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+        <state relative-caret-position="2584">
+          <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/owl.carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="4148">
           <caret line="252" selection-start-line="252" selection-end-line="252" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
