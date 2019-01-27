@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('toy-template');
 });
 
 Auth::routes();
@@ -23,3 +23,4 @@ Route::resource('admin/store','StoreController');
 Route::resource('admin/forum','ForumCategoryController');
 Route::resource('admin/coupon','CouponsController');
 Route::resource('admin/banner','HomeBannerController');
+Route::get('/coupons','PageController@coupons');
