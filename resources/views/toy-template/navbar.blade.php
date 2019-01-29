@@ -16,10 +16,10 @@
             <li class="nav-item">
                 <a href="service.html" class="nav-link">Service</a>
             </li>
-            <li class="nav-item">
+            {{--<li class="nav-item">
                 <a href="shop.html" class="nav-link">Shop Now</a>
-            </li>
-            <li class="nav-item dropdown">
+            </li>--}}
+            {{--<li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Pages
                 </a>
@@ -38,7 +38,7 @@
                     <a class="nav-link " href="product.html">Key Toys</a>
                     <a class="nav-link " href="product.html">Boys Toys</a>
                 </div>
-            </li>
+            </li>--}}
             <li class="nav-item">
                 <a href="contact.html" class="nav-link">Contact</a>
             </li>

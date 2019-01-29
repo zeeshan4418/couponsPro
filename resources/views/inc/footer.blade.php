@@ -1,9 +1,9 @@
 </div>
 </body>
 <!-- Scripts -->
-<script src="{{ asset('js/jquery-1.11.0.min.js') }}"></script>
+<script src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
-<script src="{{ asset('js/bootstrap.js') }}"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <!-- Metis Menu Plugin JavaScript -->
 <script src="{{ asset('admin') }}/vendor/metisMenu/metisMenu.min.js"></script>
 <!-- Custom Theme JavaScript -->
